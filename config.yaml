@@ -72,9 +72,8 @@ variables:
     type: array
     default:
       - cloudtrail-service-disabled
-      - cloudtrail-log-file-validating
       - cloudtrail-logs-cloudwatch
-      - cloudtrail-no-global-trails
+      - cloudtrail-logs-encrypted
   AUDIT_AWS_REDSHIFT_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-version-upgrade,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory"
     required: false
@@ -82,7 +81,6 @@ variables:
     default:
       - redshift-publicly-accessible
       - redshift-encrypted
-      - redshift-no-version-upgrade
       - redshift-no-require-ssl
       - redshift-no-s3-logging
       - redshift-no-user-logging
@@ -93,24 +91,20 @@ variables:
     type: array
     default:
       - rds-short-backup-retention-period
-      - rds-no-auto-minor-version-upgrade
       - rds-db-publicly-accessible
   AUDIT_AWS_IAM_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all IAM alerts. Choices are iam-inventory-users,iam-inventory-roles,iam-inventory-policies,iam-inventory-groups,iam-unusediamgroup,iam-multiple-keys,iam-inactive-key-no-rotation,iam-active-key-no-rotation,iam-missing-password-policy,iam-passwordreuseprevention,iam-expirepasswords,iam-no-mfa,iam-root-no-mfa,iam-root-active-password,iam-user-attached-policies,iam-password-policy-uppercase,iam-password-policy-lowercase,iam-password-policy-symbol,iam-password-policy-number,iam-password-policy-min-length,iam-root-access-key-1,iam-root-access-key-2,iam-support-role,iam-user-password-not-used"
     required: false
     type: array
     default:
-      - iam-unusediamgroup
-      - iam-multiple-keys
+      - iam-root-multiple-keys
       - iam-inactive-key-no-rotation
-      - iam-active-key-no-rotation
       - iam-missing-password-policy
       - iam-passwordreuseprevention
-      - iam-expirepasswords
       - iam-no-mfa
-      - iam-root-no-mfa
       - iam-root-active-password
       - iam-user-attached-policies
+      - iam-password-policy-uppercase
       - iam-password-policy-uppercase
       - iam-password-policy-lowercase
       - iam-password-policy-symbol
@@ -119,22 +113,29 @@ variables:
       - iam-root-access-key-1
       - iam-root-access-key-2
       - iam-support-role
-      - iam-user-password-not-used
-      - iam-cloudbleed-passwords-not-rotated
-      - iam-internal
+      - iam-unused-access
+      - iam-no-hardware-mfa-root
+      - iam-active-root-user
+      - iam-mfa-password-holders
+      - manual-obscure-auth-info 
+      - manual-maintenance-records
+      - manual-approved-monitored-maintenance 
+      - manual-component-removal-approval 
+      - iam-root-key-access
+      - iam-root-no-mfa
+      - iam-initialization-access-key
+      - manual-full-privilege-user
   AUDIT_AWS_ELB_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all ELB alerts. Choices are elb-old-ssl-policy,elb-current-ssl-policy,elb-inventory"
     required: false
     type: array
     default:
       - elb-old-ssl-policy
-      - elb-current-ssl-policy
   AUDIT_AWS_EC2_ALERT_LIST:
     description: 'Which alerts would you like to check for? Default is all EC2 alerts. Choices are ec2-inventory-instances,ec2-inventory-security-groups,ec2-ip-address-whitelisted,ec2-unrestricted-traffic,ec2-TCP-1521-0.0.0.0/0,ec2-TCP-3306-0.0.0.0/0,ec2-TCP-5432-0.0.0.0/0,ec2-TCP-27017-0.0.0.0/0,ec2-TCP-1433-0.0.0.0/0,ec2-TCP-3389-0.0.0.0/0,ec2-TCP-22-0.0.0.0/0,ec2-TCP-5439-0.0.0.0/0,ec2-TCP-23,ec2-TCP-21,ec2-TCP-20,ec2-ports-range,ec2-not-used-security-groups'
     required: false
     type: array
     default:
-      - ec2-ip-address-whitelisted
       - ec2-unrestricted-traffic
       - ec2-TCP-1521-0.0.0.0/0
       - ec2-TCP-3306-0.0.0.0/0
@@ -149,6 +150,7 @@ variables:
       - ec2-TCP-20
       - ec2-ports-range
       - ec2-not-used-security-groups
+      - ec2-default-security-group-traffic
   AUDIT_AWS_S3_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all S3 alerts. Choices are s3-allusers-write,s3-allusers-write-acp,s3-allusers-read,s3-authenticatedusers-write,s3-authenticatedusers-write-acp,s3-authenticatedusers-read,s3-logging-disabled,s3-world-open-policy-delete,s3-world-open-policy-get,s3-world-open-policy-list,s3-world-open-policy-put,s3-world-open-policy-all,s3-only-ip-based-policy"
     required: false
@@ -187,7 +189,6 @@ variables:
       required: false
       type: array
       default:
-        - config-enabled-rule
   AUDIT_AWS_SNS_ALERT_LIST:
       description: "Which alerts would you like to check for? Default is all SNS alerts. Choices are sns-subscriptions-inventory,sns-topics-inventory"
       required: false
