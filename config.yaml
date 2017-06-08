@@ -67,7 +67,7 @@ variables:
     type: string
     default: "NOT_A_TAG"
   AUDIT_AWS_CLOUDTRAIL_ALERT_LIST:
-    description: "Which alerts would you like to check for? Default is all Cloudtrail alerts. Possible values are cloudtrail-inventory,cloudtrail-service-disabled,cloudtrail-log-file-validating,cloudtrail-logs-cloudwatch,cloudtrail-no-global-trails"
+    description: "Which alerts would you like to check for? Default is all Cloudtrail alerts. Possible values are cloudtrail-inventory,cloudtrail-service-disabled,cloudtrail-logs-cloudwatch"
     required: false
     type: array
     default:
