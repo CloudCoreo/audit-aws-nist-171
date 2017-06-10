@@ -195,24 +195,10 @@ variables:
       type: array
       default:
   AUDIT_AWS_CIS3_RULE_LIST:
-    description: "Select CIS Section 3 rules to run. Default is all CIS Section 3 alerts. Choices are monitor-unauthorized-api-calls, monitor-console-login-without-mfa, monitor-root-account-usage, monitor-iam-policy-changes, monitor-cloudtrail-config-changes, monitor-console-auth-failures, monitor-cmk-change-delete, monitor-s3-bucket-policy-changes, monitor-cloudwatch-config-changes, monitor-security-group-changes, monitor-nacl-changes, monitor-network-gateway-changes, monitor-route-table-changes, monitor-vpc-changes"
+    description: "Select CIS Section 3 rules to run. This is not applicable to NIST"
     required: false
     type: array
     default:
-      - monitor-unauthorized-api-calls
-      - monitor-console-login-without-mfa
-      - monitor-root-account-usage
-      - monitor-iam-policy-changes
-      - monitor-cloudtrail-config-changes
-      - monitor-console-auth-failures
-      - monitor-cmk-change-delete
-      - monitor-s3-bucket-policy-changes
-      - monitor-cloudwatch-config-changes
-      - monitor-security-group-changes
-      - monitor-nacl-changes
-      - monitor-network-gateway-changes
-      - monitor-route-table-changes
-      - monitor-vpc-changes
   AUDIT_AWS_CIS2_RULE_LIST:
     description: "Select CIS Section 2.3 and 2.6 rules to run. Default is s3-cloudtrail-public-access, s3-cloudtrail-no-logging"
     required: false
