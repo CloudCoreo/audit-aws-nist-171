@@ -75,7 +75,7 @@ variables:
       - cloudtrail-logs-cloudwatch
       - cloudtrail-logs-encrypted
   AUDIT_AWS_REDSHIFT_ALERT_LIST:
-    description: "Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-version-upgrade,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory"
+    description: "Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory"
     required: false
     type: array
     default:
@@ -84,7 +84,6 @@ variables:
       - redshift-no-require-ssl
       - redshift-no-s3-logging
       - redshift-no-user-logging
-      - redshift-snapshot-retention
   AUDIT_AWS_RDS_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all RDS alerts. Choices are rds-short-backup-retention-period,rds-no-auto-minor-version-upgrade,rds-db-publicly-accessible,rds-inventory"
     required: false
