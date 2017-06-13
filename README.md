@@ -1,13 +1,14 @@
-audit RDS
+audit AWS NIST 171
 ============================
-This stack will monitor RDS and alert on things CloudCoreo developers think are violations of best practices
+This stack will monitor AWS and alert on violations against the NIST 171 policy
 
 
 ## Description
-This repo is designed to work with CloudCoreo. It will monitor RDS against best practices for you and send a report to the email address designated by the config.yaml AUDIT_AWS_RDS_ALERT_RECIPIENT value
+This composite will monitor AWS against the NIST 171 Standard
+
 
 ## Hierarchy
-![composite inheritance hierarchy](https://raw.githubusercontent.com/CloudCoreo/STACK/master/images/hierarchy.png "composite inheritance hierarchy")
+![composite inheritance hierarchy](https://raw.githubusercontent.com/CloudCoreo/audit-aws-nist-171/master/images/hierarchy.png "composite inheritance hierarchy")
 
 
 
@@ -96,16 +97,16 @@ This repo is designed to work with CloudCoreo. It will monitor RDS against best 
 ## Tags
 1. Audit
 1. Best Practices
-1. Alert
-1. RDS
+1. NIST
+
 
 ## Categories
-1. Audit
+1. AWS Audit Policies
 
 
 
 ## Diagram
-![diagram](https://raw.githubusercontent.com/CloudCoreo/STACK/master/images/diagram.png "diagram")
+![diagram](https://raw.githubusercontent.com/CloudCoreo/audit-aws-nist-171/master/images/diagram.png "diagram")
 
 
 ## Icon
