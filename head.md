@@ -1,3 +1,3 @@
-audit RDS
+audit AWS NIST 171
 ============================
-This stack will monitor RDS and alert on things CloudCoreo developers think are violations of best practices
+This stack will monitor AWS and alert on violations against the NIST 171 policy
