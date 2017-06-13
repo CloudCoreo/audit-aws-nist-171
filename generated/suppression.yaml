@@ -202,12 +202,6 @@ iam-password-policy-number:
 iam-password-policy-min-length:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
-iam-root-access-key-1:
-  - put-your-object-id-here-1: ""
-  - put-your-object-id-here-2: "2017-01-10T00:00Z"
-iam-root-access-key-2:
-  - put-your-object-id-here-1: ""
-  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 iam-cloudbleed-passwords-not-rotated:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
