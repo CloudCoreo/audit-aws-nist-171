@@ -1,0 +1,170 @@
+  AUDIT_AWS_CLOUDTRAIL_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - cloudtrail-inventory # not_violation 
+      - cloudtrail-service-disabled # cis_id:2.1 
+      - cloudtrail-log-file-validating # cis_id:2.2 
+      - cloudtrail-logs-cloudwatch # cis_id:2.4 
+      - cloudtrail-no-global-trails # 
+      - cloudtrail-logs-encrypted # cis_id:2.7 
+#       - cloudtrail-trail-with-global # not_violation 
+#       - cloudtrail-inventory-1 # not_violation 
+    description: "Which rules would you like to run? Possible values are cloudtrail-inventory cloudtrail-service-disabled cloudtrail-log-file-validating cloudtrail-logs-cloudwatch cloudtrail-no-global-trails cloudtrail-logs-encrypted"
+  AUDIT_AWS_CLOUDWATCH_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - cloudwatch-inventory # not_violation 
+    description: "Which rules would you like to run? Possible values are cloudwatch-inventory"
+  AUDIT_AWS_CLOUDWATCHLOGS_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - cloudwatchlogs-inventory # not_violation 
+    description: "Which rules would you like to run? Possible values are cloudwatchlogs-inventory"
+  AUDIT_AWS_CONFIG_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - config-inventory # not_violation 
+      - config-enabled-rule # not_violation cis_id:2.5 
+    description: "Which rules would you like to run? Possible values are config-inventory config-enabled-rule"
+  AUDIT_AWS_EC2_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - ec2-inventory-instances # not_violation 
+      - ec2-inventory-security-groups # not_violation 
+      - ec2-ip-address-whitelisted # 
+      - ec2-unrestricted-traffic # 
+      - ec2-TCP-1521-0.0.0.0/0 # 
+      - ec2-TCP-3306-0.0.0.0/0 # 
+      - ec2-TCP-5432-0.0.0.0/0 # 
+      - ec2-TCP-27017-0.0.0.0/0 # 
+      - ec2-TCP-1433-0.0.0.0/0 # 
+      - ec2-TCP-3389-0.0.0.0/0 # cis_id:4.2 
+      - ec2-TCP-22-0.0.0.0/0 # cis_id:4.1 
+      - ec2-TCP-5439-0.0.0.0/0 # 
+      - ec2-TCP-23 # 
+      - ec2-TCP-21 # 
+      - ec2-TCP-20 # 
+      - ec2-ports-range # 
+      - ec2-not-used-security-groups # 
+      - ec2-default-security-group-traffic # cis_id:4.4 
+      - ec2-vpc-flow-logs # cis_id:4.3 
+#       - ec2-security-groups-list # not_violation 
+#       - ec2-instances-active-security-groups-list # not_violation 
+#       - elb-load-balancers-active-security-groups-list # not_violation 
+#       - vpc-inventory # not_violation 
+#       - flow-logs-inventory # not_violation 
+    description: "Which rules would you like to run? Possible values are ec2-inventory-instances ec2-inventory-security-groups ec2-ip-address-whitelisted ec2-unrestricted-traffic ec2-TCP-1521-0.0.0.0/0 ec2-TCP-3306-0.0.0.0/0 ec2-TCP-5432-0.0.0.0/0 ec2-TCP-27017-0.0.0.0/0 ec2-TCP-1433-0.0.0.0/0 ec2-TCP-3389-0.0.0.0/0 ec2-TCP-22-0.0.0.0/0 ec2-TCP-5439-0.0.0.0/0 ec2-TCP-23 ec2-TCP-21 ec2-TCP-20 ec2-ports-range ec2-not-used-security-groups ec2-default-security-group-traffic ec2-vpc-flow-logs"
+  AUDIT_AWS_ELB_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - elb-inventory # not_violation 
+      - elb-old-ssl-policy # 
+      - elb-current-ssl-policy # not_violation 
+    description: "Which rules would you like to run? Possible values are elb-inventory elb-old-ssl-policy elb-current-ssl-policy"
+  AUDIT_AWS_IAM_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - iam-inventory-users # not_violation 
+      - iam-inventory-roles # not_violation 
+      - iam-inventory-policies # not_violation 
+      - iam-inventory-groups # not_violation 
+      - iam-unusediamgroup # 
+      - iam-multiple-keys # 
+      - iam-root-multiple-keys # 
+      - iam-inactive-key-no-rotation # 
+      - iam-active-key-no-rotation # cis_id:1.4 
+      - iam-missing-password-policy # 
+      - iam-passwordreuseprevention # cis_id:1.10 
+      - iam-expirepasswords # cis_id:1.11 
+      - iam-no-mfa # 
+      - iam-root-active-password # 
+      - iam-user-attached-policies # cis_id:1.16 
+      - iam-password-policy-uppercase # cis_id:1.05 
+      - iam-password-policy-lowercase # cis_id:1.06 
+      - iam-password-policy-symbol # cis_id:1.07 
+      - iam-password-policy-number # cis_id:1.08 
+      - iam-password-policy-min-length # cis_id:1.9 
+      - iam-root-access-key-1 # 
+      - iam-root-access-key-2 # 
+      - iam-cloudbleed-passwords-not-rotated # 
+      - iam-support-role # cis_id:1.22 
+      - iam-user-password-not-used # not_violation 
+      - iam-unused-access # not_violation cis_id:1.3 
+      - iam-no-hardware-mfa-root # cis_id:1.14 
+      - iam-active-root-user # not_violation cis_id:1.1 
+      - iam-mfa-password-holders # not_violation cis_id:1.2 
+      - manual-ensure-security-questions # cis_id:1.15 
+      - manual-detailed-billing # cis_id:1.17 
+      - iam-root-key-access # cis_id:1.12 
+      - iam-root-no-mfa # cis_id:1.13 
+      - manual-strategic-iam-roles # cis_id:1.18 
+      - iam-initialization-access-key # cis_id:1.23 
+      - manual-contact-details # cis_id:1.19 
+      - manual-security-contact # cis_id:1.20 
+      - manual-resource-instance-access # cis_id:1.21 
+      - manual-full-privilege-user # cis_id:1.24 
+      - manual-appropriate-sns-subscribers # cis_id:3.15 
+      - manual-least-access-routing-tables # cis_id:4.5 
+#       - iam-internal # 
+    description: "Which rules would you like to run? Possible values are iam-inventory-users iam-inventory-roles iam-inventory-policies iam-inventory-groups iam-unusediamgroup iam-multiple-keys iam-root-multiple-keys iam-inactive-key-no-rotation iam-active-key-no-rotation iam-missing-password-policy iam-passwordreuseprevention iam-expirepasswords iam-no-mfa iam-root-active-password iam-user-attached-policies iam-password-policy-uppercase iam-password-policy-lowercase iam-password-policy-symbol iam-password-policy-number iam-password-policy-min-length iam-root-access-key-1 iam-root-access-key-2 iam-cloudbleed-passwords-not-rotated iam-support-role iam-user-password-not-used iam-unused-access iam-no-hardware-mfa-root iam-active-root-user iam-mfa-password-holders manual-ensure-security-questions manual-detailed-billing iam-root-key-access iam-root-no-mfa manual-strategic-iam-roles iam-initialization-access-key manual-contact-details manual-security-contact manual-resource-instance-access manual-full-privilege-user manual-appropriate-sns-subscribers manual-least-access-routing-tables"
+  AUDIT_AWS_KMS_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - kms-inventory # not_violation 
+      - kms-key-rotates # not_violation cis_id:2.8 
+    description: "Which rules would you like to run? Possible values are kms-inventory kms-key-rotates"
+  AUDIT_AWS_RDS_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - rds-inventory # not_violation 
+      - rds-short-backup-retention-period # 
+      - rds-no-auto-minor-version-upgrade # 
+      - rds-db-publicly-accessible # 
+    description: "Which rules would you like to run? Possible values are rds-inventory rds-short-backup-retention-period rds-no-auto-minor-version-upgrade rds-db-publicly-accessible"
+  AUDIT_AWS_REDSHIFT_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - redshift-inventory # not_violation 
+      - redshift-publicly-accessible # 
+      - redshift-encrypted # 
+      - redshift-no-version-upgrade # 
+      - redshift-no-require-ssl # 
+      - redshift-no-s3-logging # 
+      - redshift-no-user-logging # 
+      - redshift-snapshot-retention # 
+    description: "Which rules would you like to run? Possible values are redshift-inventory redshift-publicly-accessible redshift-encrypted redshift-no-version-upgrade redshift-no-require-ssl redshift-no-s3-logging redshift-no-user-logging redshift-snapshot-retention"
+  AUDIT_AWS_S3_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - s3-allusers-write # 
+      - s3-allusers-write-acp # 
+      - s3-allusers-read # 
+      - s3-authenticatedusers-write # 
+      - s3-authenticatedusers-write-acp # 
+      - s3-authenticatedusers-read # 
+      - s3-logging-disabled # 
+      - s3-world-open-policy-delete # 
+      - s3-world-open-policy-get # 
+      - s3-world-open-policy-list # 
+      - s3-world-open-policy-put # 
+      - s3-world-open-policy-all # 
+      - s3-only-ip-based-policy # 
+    description: "Which rules would you like to run? Possible values are s3-allusers-write s3-allusers-write-acp s3-allusers-read s3-authenticatedusers-write s3-authenticatedusers-write-acp s3-authenticatedusers-read s3-logging-disabled s3-world-open-policy-delete s3-world-open-policy-get s3-world-open-policy-list s3-world-open-policy-put s3-world-open-policy-all s3-only-ip-based-policy"
+  AUDIT_AWS_SNS_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      - sns-topics-inventory # not_violation 
+      - sns-subscriptions-inventory # not_violation 
+    description: "Which rules would you like to run? Possible values are sns-topics-inventory sns-subscriptions-inventory"
