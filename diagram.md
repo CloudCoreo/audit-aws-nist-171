@@ -1,1 +1,1 @@
-![diagram](https://raw.githubusercontent.com/CloudCoreo/STACK/master/images/diagram.png "diagram")
+![diagram](https://raw.githubusercontent.com/CloudCoreo/audit-aws-nist-171/master/images/diagram.png "diagram")
