@@ -67,7 +67,7 @@ variables:
     type: string
     default: "NOT_A_TAG"
   AUDIT_AWS_CLOUDTRAIL_ALERT_LIST:
-    description: "Which alerts would you like to check for? Default is all Cloudtrail alerts. Possible values are cloudtrail-inventory,cloudtrail-service-disabled,cloudtrail-log-file-validating,cloudtrail-logs-cloudwatch,cloudtrail-no-global-trails"
+    description: "Which alerts would you like to check for? Default is all Cloudtrail alerts. Possible values are cloudtrail-inventory,cloudtrail-service-disabled,cloudtrail-logs-cloudwatch"
     required: false
     type: array
     default:
@@ -75,7 +75,7 @@ variables:
       - cloudtrail-logs-cloudwatch
       - cloudtrail-logs-encrypted
   AUDIT_AWS_REDSHIFT_ALERT_LIST:
-    description: "Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-version-upgrade,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory"
+    description: "Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory"
     required: false
     type: array
     default:
@@ -84,7 +84,6 @@ variables:
       - redshift-no-require-ssl
       - redshift-no-s3-logging
       - redshift-no-user-logging
-      - redshift-snapshot-retention
   AUDIT_AWS_RDS_ALERT_LIST:
     description: "Which alerts would you like to check for? Default is all RDS alerts. Choices are rds-short-backup-retention-period,rds-no-auto-minor-version-upgrade,rds-db-publicly-accessible,rds-inventory"
     required: false
@@ -195,24 +194,10 @@ variables:
       type: array
       default:
   AUDIT_AWS_CIS3_RULE_LIST:
-    description: "Select CIS Section 3 rules to run. Default is all CIS Section 3 alerts. Choices are monitor-unauthorized-api-calls, monitor-console-login-without-mfa, monitor-root-account-usage, monitor-iam-policy-changes, monitor-cloudtrail-config-changes, monitor-console-auth-failures, monitor-cmk-change-delete, monitor-s3-bucket-policy-changes, monitor-cloudwatch-config-changes, monitor-security-group-changes, monitor-nacl-changes, monitor-network-gateway-changes, monitor-route-table-changes, monitor-vpc-changes"
+    description: "Select CIS Section 3 rules to run. This is not applicable to NIST"
     required: false
     type: array
     default:
-      - monitor-unauthorized-api-calls
-      - monitor-console-login-without-mfa
-      - monitor-root-account-usage
-      - monitor-iam-policy-changes
-      - monitor-cloudtrail-config-changes
-      - monitor-console-auth-failures
-      - monitor-cmk-change-delete
-      - monitor-s3-bucket-policy-changes
-      - monitor-cloudwatch-config-changes
-      - monitor-security-group-changes
-      - monitor-nacl-changes
-      - monitor-network-gateway-changes
-      - monitor-route-table-changes
-      - monitor-vpc-changes
   AUDIT_AWS_CIS2_RULE_LIST:
     description: "Select CIS Section 2.3 and 2.6 rules to run. Default is s3-cloudtrail-public-access, s3-cloudtrail-no-logging"
     required: false
