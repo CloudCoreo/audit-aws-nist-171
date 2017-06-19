@@ -110,5 +110,6 @@ This composite will monitor AWS against the NIST 171 Standard
 
 
 ## Icon
+![icon](https://raw.githubusercontent.com/CloudCoreo/audit-aws-nist-171/master/images/icon.png "icon")
 
 
