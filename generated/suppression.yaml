@@ -381,7 +381,13 @@ s3-only-ip-based-policy:
 sns-topics-inventory:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+sns-topics-inventory-internal:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 sns-subscriptions-inventory:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+sns-subscriptions-inventory-internal:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
 
