@@ -105,6 +105,10 @@ ec2-not-used-security-groups:
   "Security Group": "__OBJECT__~https://console.aws.amazon.com/ec2/v2/home?region=+__OBJECT__.violations.__RULE__.region+#SecurityGroups:search=__OBJECT__;sort=desc:tag:Name"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
+ec2-default-security-group-traffic:
+  "Security Group": "__OBJECT__~https://console.aws.amazon.com/ec2/v2/home?region=+__OBJECT__.violations.__RULE__.region+#SecurityGroups:search=__OBJECT__;sort=desc:tag:Name"
+  "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
+  "AWS Tags": "__TAGS__"
 ec2-vpc-flow-logs:
   "VPC ID": "__OBJECT__~https://console.aws.amazon.com/vpc/home?region=+__OBJECT__.violations.__RULE__.region+#vpcs:filter=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
