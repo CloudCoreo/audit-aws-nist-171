@@ -13,7 +13,7 @@ cloudtrail-log-file-validating:
  "ARN": "+__OBJECT__.violator_info.trail_arn+#"
  "Region": "+__OBJECT__.violations.__RULE__.region+~https://console.aws.amazon.com/cloudtrail/home?region=+__OBJECT__.violations.__RULE__.region+#"
 cloudtrail-logs-encrypted:
- "Trail Name": "__OBJECT__"
+ "Trail Name": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/cloudtrail/home?region=+__OBJECT__.violations.__RULE__.region+#/configuration/+__OBJECT__.violator_info.0.object.trail_arn+"
  "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
 cloudwatch-inventory:
   "AWS Cloud Object Name": "__OBJECT__~https://console.aws.amazon.com/cloudwatch/home?region=+__OBJECT__.violations.__RULE__.region+#alarm:alarmFilter=ANY;name=__OBJECT__"
@@ -43,6 +43,7 @@ ec2-inventory-security-groups:
   "AWS Tags": "__TAGS__"
 ec2-ip-address-whitelisted:
   "Security Group": "__OBJECT__~https://console.aws.amazon.com/ec2/v2/home?region=+__OBJECT__.violations.__RULE__.region+#SecurityGroups:search=__OBJECT__;sort=desc:tag:Name"
+  "IP Addresses": "+__OBJECT__.violations.__RULE__.result_info.0.object.cidr_ip+"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 ec2-unrestricted-traffic:
@@ -101,6 +102,8 @@ ec2-ports-range:
   "Security Group": "__OBJECT__~https://console.aws.amazon.com/ec2/v2/home?region=+__OBJECT__.violations.__RULE__.region+#SecurityGroups:search=__OBJECT__;sort=desc:tag:Name"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
+  "From Port": "+__OBJECT__.violations.__RULE__.result_info.0.object.from_port+"
+  "To Port": "+__OBJECT__.violations.__RULE__.result_info.0.object.to_port+"
 ec2-not-used-security-groups:
   "Security Group": "__OBJECT__~https://console.aws.amazon.com/ec2/v2/home?region=+__OBJECT__.violations.__RULE__.region+#SecurityGroups:search=__OBJECT__;sort=desc:tag:Name"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
@@ -214,11 +217,11 @@ iam-unused-access:
 iam-initialization-access-key:
   "Password Policy": "__OBJECT__~https://us-east-1.console.aws.amazon.com/iam/home?region=+__OBJECT__.violations.__RULE__.region+#/credential_report"
 kms-inventory:
-  "AWS Cloud Object Name": "__OBJECT__"
+  "AWS KMS Object": "__OBJECT__~https://console.aws.amazon.com/iam/home?region=+__OBJECT__.violations.__RULE__.region+#/encryptionKeys/+__OBJECT__.violations.__RULE__.region+/+__OBJECT__.violator_info.key_id+"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 kms-key-rotates:
-  "AWS Cloud Object Name": "__OBJECT__"
+  "AWS KMS Object": "__OBJECT__~https://console.aws.amazon.com/iam/home?region=+__OBJECT__.violations.__RULE__.region+#/encryptionKeys/+__OBJECT__.violations.__RULE__.region+/+__OBJECT__.violator_info.key_id+"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 rds-short-backup-retention-period:

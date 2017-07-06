@@ -253,6 +253,9 @@ manual-strategic-iam-roles:
 iam-initialization-access-key:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+iam-omnipotent-policy:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 manual-contact-details:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -262,9 +265,6 @@ manual-security-contact:
 manual-resource-instance-access:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
-manual-full-privilege-user:
-  - put-your-object-id-here-1: ""
-  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 manual-appropriate-sns-subscribers:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -272,6 +272,9 @@ manual-least-access-routing-tables:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
 iam-internal:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+iam-policy-internal:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
 
