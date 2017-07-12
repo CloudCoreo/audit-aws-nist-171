@@ -272,6 +272,13 @@ redshift-snapshot-retention:
   "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
+s3-inventory:
+  "AWS S3 Bucket": "__OBJECT__~https://console.aws.amazon.com/s3/buckets/__OBJECT__/?region=+__OBJECT__.violations.__RULE__.region+&tab=overview#&bucket=__OBJECT__"
+  "Creation Date": "+__OBJECT__.violations.__RULE__.result_info.0.object.creation_date+"
+  "Owner Name": "+__OBJECT__.violations.__RULE__.result_info.0.object.owner.display_name+"
+  "Owner ID": "+__OBJECT__.violations.__RULE__.result_info.0.object.owner.id+"
+  "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
+  "AWS Tags": "__TAGS__"
 s3-allusers-write:
   "AWS S3 Bucket": "__OBJECT__~https://console.aws.amazon.com/s3/buckets/__OBJECT__/?region=+__OBJECT__.violations.__RULE__.region+&tab=overview#&bucket=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
