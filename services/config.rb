@@ -12,7 +12,7 @@
 ##
 coreo_uni_util_jsrunner "cis3-rollup" do
   action :nothing
-do
+end
 
 coreo_uni_util_variables "rollup-update-advisor-output" do
   action :nothing

@@ -1,4 +1,9 @@
 variables:
+  HTML_REPORT_SUBJECT:
+    required: false
+    type: string
+    default:
+    description: "Enter a custom report subject name."
   AUDIT_AWS_ALERT_RECIPIENT:
     overrides:
       - AUDIT_AWS_CLOUDTRAIL_ALERT_RECIPIENT
