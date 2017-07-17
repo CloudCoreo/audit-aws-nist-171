@@ -245,31 +245,36 @@ rds-inventory:
   "Instance Type": "+__OBJECT__.violations.__RULE__.result_info.0.object.db_instance_class+"
   "AWS Tags": "__TAGS__"
 redshift-inventory:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-publicly-accessible:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-encrypted:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-no-version-upgrade:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-no-require-ssl:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#edit-parameter-group:param-group=__OBJECT__;cluster="
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#edit-parameter-group:param-group=__OBJECT__;cluster="
+  "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
+  "AWS Tags": "__TAGS__"
+redshift-no-s3-logging:
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#edit-parameter-group:param-group=__OBJECT__;cluster="
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-no-user-logging:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#edit-parameter-group:param-group=__OBJECT__;cluster="
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#edit-parameter-group:param-group=__OBJECT__;cluster="
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 redshift-snapshot-retention:
-  "AWS Object ID": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Redshift Instance": "__OBJECT__~https://+__OBJECT__.violations.__RULE__.region+.console.aws.amazon.com/redshift/home?region=+__OBJECT__.violations.__RULE__.region+#cluster-details:cluster=__OBJECT__"
+  "Retention Period": "+__OBJECT__.violator_info.automated_snapshot_retention_period+"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
 s3-inventory:
