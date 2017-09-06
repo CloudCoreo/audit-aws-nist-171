@@ -210,6 +210,19 @@ variables:
     default:
       - s3-cloudtrail-public-access
       - s3-cloudtrail-no-logging
+  AUDIT_AWS_CIS_IAM_ADMIN_GROUP_PERMISSIONS:
+    description: "This is a list of group permissions that signify an admin on the system. Used specifically for 3.1.1"
+    required: true
+    type: array
+    default:
+      - iam:PutGroupPolicy
+      - iam:PutRolePolicy
+      - iam:PutUserPolicy
+      - iam:CreatePolicy
+      - iam:CreatePolicyVersion
+      - iam:AttachGroupPolicy
+      - iam:AttachRolePolicy
+      - iam:AttachUserPolicy
   AUDIT_AWS_REGIONS:
     overrides:
       - AUDIT_AWS_CLOUDTRAIL_REGIONS
