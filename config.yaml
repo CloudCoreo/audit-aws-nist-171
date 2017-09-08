@@ -199,10 +199,11 @@ variables:
       type: array
       default:
   AUDIT_AWS_CIS3_RULE_LIST:
-    description: "Select CIS Section 3 rules to run. This is not applicable to NIST"
+    description: 
     required: false
     type: array
     default:
+      - monitor-console-auth-failures
   AUDIT_AWS_CIS2_RULE_LIST:
     description: "Select CIS Section 2.3 and 2.6 rules to run. Default is s3-cloudtrail-public-access, s3-cloudtrail-no-logging"
     required: false
