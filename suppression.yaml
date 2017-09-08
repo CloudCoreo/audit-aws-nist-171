@@ -214,6 +214,9 @@ iam-user-password-not-used:
 iam-unused-access:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+iam-user-is-admin:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 iam-no-hardware-mfa-root:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -336,6 +339,9 @@ redshift-snapshot-retention:
 #
 # YYYY-MM-DDTHH:mm:ss.sssZ
 s3-inventory:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+s3-allusers-full-control:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
 s3-allusers-write:
