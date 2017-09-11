@@ -204,6 +204,8 @@ variables:
     type: array
     default:
       - monitor-console-auth-failures
+      - monitor-cloudwatch-config-changes
+      - monitor-cloudtrail-config-changes
   AUDIT_AWS_CIS2_RULE_LIST:
     description: "Select CIS Section 2.3 and 2.6 rules to run. Default is s3-cloudtrail-public-access, s3-cloudtrail-no-logging"
     required: false
