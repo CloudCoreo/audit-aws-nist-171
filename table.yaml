@@ -237,6 +237,10 @@ rds-db-publicly-accessible:
   "RDS Instance": "__OBJECT__~https://console.aws.amazon.com/rds/home?region=+__OBJECT__.violations.__RULE__.region+#dbinstances:id=__OBJECT__;sf=all"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
   "AWS Tags": "__TAGS__"
+rds-db-snapshot-unencrypted:
+  "RDS Instance": "__OBJECT__~https://console.aws.amazon.com/rds/home?region=+__OBJECT__.violations.__RULE__.region+#db-snapshots:id=__OBJECT__;sf=all"
+  "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
+  "AWS Tags": "__TAGS__"
 rds-inventory:
   "RDS Instance": "__OBJECT__~https://console.aws.amazon.com/rds/home?region=+__OBJECT__.violations.__RULE__.region+#dbinstances:id=__OBJECT__;sf=all"
   "AWS Region": "+__OBJECT__.violations.__RULE__.region+"
