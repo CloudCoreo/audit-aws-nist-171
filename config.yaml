@@ -266,70 +266,70 @@ variables:
       - manual-inventory-performed
     description: ""
   MANUAL_MAINTENANCE_RECORDS_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_APPROVED_MONITORED_MAINTENANCE_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_COMPONENT_REMOVAL_APPROVAL_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_ENSURE_SECURITY_QUESTIONS_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_OBSCURE_AUTH_INFO_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_DETAILED_BILLING_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_STRATEGIC_IAM_ROLES_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_CONTACT_DETAILS_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_SECURITY_CONTACT_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_RESOURCE_INSTANCE_ACCESS_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_APPROPRIATE_SNS_SUBSCRIBERS_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_LEAST_ACCESS_ROUTING_TABLES_INPUT:
-    required: true
+    required: false
     type: string
     description: 
   MANUAL_COMMUNICATION_SESSION_AUTHENTICITY_INPUT:
-    required: true
+    required: false
     type: string
     description:
   MANUAL_ACCESS_THROUGH_VPN_INPUT:
-    required: true
+    required: false
     type: string
     description:
   MANUAL_MOBILE_DEVICE_GUIDELINES_INPUT:
-    required: true
+    required: false
     type: string
     description:
   MANUAL_MOBILE_DEVICE_CUI_ENCRYPTION_INPUT:
-    required: true
+    required: false
     type: string
     description:
   MANUAL_INVENTORY_PERFORMED_INPUT:
-    required: true
+    required: false
     type: string
     description:
