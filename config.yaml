@@ -125,6 +125,7 @@ variables:
       - manual-maintenance-records
       - manual-approved-monitored-maintenance 
       - manual-component-removal-approval 
+      - manual-appropriate-sns-subscribers # cis_id:3.15 #meta_nist_171_id "3.14.6, 3.14.7"
       - iam-root-key-access
       - iam-root-no-mfa
       - iam-initialization-access-key
@@ -188,6 +189,7 @@ variables:
     required: false
     type: array
     default:
+        - kms-unused
   AUDIT_AWS_CONFIG_ALERT_LIST:
       description: "Which alerts would you like to check for? Default is all SNS alerts. Choices are config-inventory, config-enabled-rule"
       required: false
@@ -203,6 +205,22 @@ variables:
     required: false
     type: array
     default:
+      - monitor-root-account-usage
+      - monitor-iam-policy-changes
+      - monitor-unauthorized-api-calls
+      - monitor-console-login-without-mfa
+      - monitor-root-account-usage
+      - monitor-iam-policy-changes
+      - monitor-cloudtrail-config-changes
+      - monitor-console-auth-failures
+      - monitor-cmk-change-delete
+      - monitor-s3-bucket-policy-changes
+      - monitor-cloudwatch-config-changes
+      - monitor-security-group-changes
+      - monitor-nacl-changes
+      - monitor-network-gateway-changes
+      - monitor-route-table-changes
+      - monitor-vpc-changes
   AUDIT_AWS_CIS2_RULE_LIST:
     description: "Select CIS Section 2.3 and 2.6 rules to run. Default is s3-cloudtrail-public-access, s3-cloudtrail-no-logging"
     required: false
