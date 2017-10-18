@@ -259,3 +259,95 @@ variables:
       - eu-west-1
       - eu-west-2
       - sa-east-1
+  AUDIT_AWS_MANUAL_ALERT_LIST:
+    required: false
+    type: array
+    default:
+      #- manual-ensure-security-questions # cis_id:1.15
+      #- manual-detailed-billing # cis_id:1.17
+      #- manual-strategic-iam-roles # cis_id:1.18
+      #- manual-contact-details # cis_id:1.19
+      #- manual-security-contact # cis_id:1.20
+      #- manual-resource-instance-access # cis_id:1.21
+      - manual-full-privilege-user # cis_id:1.24
+      #- manual-appropriate-sns-subscribers # cis_id:3.15
+      #- manual-least-access-routing-tables # cis_id:4.5
+      - manual-obscure-auth-info # meta_nist_171_id "3.5.11"
+      - manual-least-access-routing-tables # cis_id:4.5
+      - manual-maintenance-records #meta_nist_171_id "3.7.1, 3.7.2, 3.7.3"
+      - manual-approved-monitored-maintenance # meta_nist_171_id "3.7.1, 3.7.2, 3.7.3"
+      - manual-component-removal-approval #meta_nist_171_id "3.7.1, 3.7.2, 3.7.3"
+      - manual-communication-session-authenticity
+      - manual-access-through-vpn
+      - manual-mobile-device-guidelines
+      - manual-mobile-device-cui-encryption
+      - manual-inventory-performed
+    description: ""
+  MANUAL_MAINTENANCE_RECORDS_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_APPROVED_MONITORED_MAINTENANCE_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_COMPONENT_REMOVAL_APPROVAL_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_ENSURE_SECURITY_QUESTIONS_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_OBSCURE_AUTH_INFO_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_DETAILED_BILLING_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_STRATEGIC_IAM_ROLES_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_CONTACT_DETAILS_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_SECURITY_CONTACT_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_RESOURCE_INSTANCE_ACCESS_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_APPROPRIATE_SNS_SUBSCRIBERS_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_LEAST_ACCESS_ROUTING_TABLES_INPUT:
+    required: false
+    type: string
+    description: 
+  MANUAL_COMMUNICATION_SESSION_AUTHENTICITY_INPUT:
+    required: false
+    type: string
+    description:
+  MANUAL_ACCESS_THROUGH_VPN_INPUT:
+    required: false
+    type: string
+    description:
+  MANUAL_MOBILE_DEVICE_GUIDELINES_INPUT:
+    required: false
+    type: string
+    description:
+  MANUAL_MOBILE_DEVICE_CUI_ENCRYPTION_INPUT:
+    required: false
+    type: string
+    description:
+  MANUAL_INVENTORY_PERFORMED_INPUT:
+    required: false
+    type: string
+    description:
