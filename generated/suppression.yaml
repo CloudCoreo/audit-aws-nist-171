@@ -110,6 +110,12 @@ ec2-default-security-group-traffic:
 ec2-vpc-flow-logs:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+ec2-security-group-nil-permissions:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+ec2-default-security-groups-list:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 ec2-security-groups-list:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -229,6 +235,9 @@ iam-user-password-not-used:
 iam-unused-access:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+iam-user-is-admin:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 iam-no-hardware-mfa-root:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -315,6 +324,12 @@ rds-short-backup-retention-period:
 rds-no-auto-minor-version-upgrade:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
+rds-db-instance-unencrypted:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+rds-db-snapshot-unencrypted:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
 rds-db-publicly-accessible:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
@@ -351,6 +366,9 @@ redshift-snapshot-retention:
 #
 # YYYY-MM-DDTHH:mm:ss.sssZ
 s3-inventory:
+  - put-your-object-id-here-1: ""
+  - put-your-object-id-here-2: "2017-01-10T00:00Z"
+s3-allusers-full-control:
   - put-your-object-id-here-1: ""
   - put-your-object-id-here-2: "2017-01-10T00:00Z"
 s3-allusers-write:
