@@ -300,67 +300,84 @@ variables:
     required: false
     type: string
     description: 
+    default: Please Answer
   MANUAL_APPROVED_MONITORED_MAINTENANCE_INPUT:
     required: false
     type: string
     description: 
+    default: Please Answer
   MANUAL_COMPONENT_REMOVAL_APPROVAL_INPUT:
     required: false
     type: string
     description: 
+    default: Please Answer
   MANUAL_ENSURE_SECURITY_QUESTIONS_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_OBSCURE_AUTH_INFO_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_DETAILED_BILLING_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_STRATEGIC_IAM_ROLES_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_CONTACT_DETAILS_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_SECURITY_CONTACT_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_RESOURCE_INSTANCE_ACCESS_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_APPROPRIATE_SNS_SUBSCRIBERS_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_LEAST_ACCESS_ROUTING_TABLES_INPUT:
     required: false
     type: string
+    default: Please Answer
     description: 
   MANUAL_COMMUNICATION_SESSION_AUTHENTICITY_INPUT:
     required: false
     type: string
+    default: Please Answer
     description:
   MANUAL_ACCESS_THROUGH_VPN_INPUT:
     required: false
     type: string
+    default: Please Answer
     description:
   MANUAL_MOBILE_DEVICE_GUIDELINES_INPUT:
     required: false
     type: string
+    default: Please Answer
     description:
   MANUAL_MOBILE_DEVICE_CUI_ENCRYPTION_INPUT:
     required: false
     type: string
+    default: Please Answer
     description:
   MANUAL_INVENTORY_PERFORMED_INPUT:
     required: false
     type: string
+    default: Please Answer
     description:
