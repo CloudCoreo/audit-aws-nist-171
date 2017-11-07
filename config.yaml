@@ -295,89 +295,82 @@ variables:
       - manual-mobile-device-guidelines
       - manual-mobile-device-cui-encryption
       - manual-inventory-performed
+      - manual-remote-access-points-secured
+      - manual-full-inventory-performed #meta_nist_171_id "3.1.20"
+      - manual-encryption-audit-performed
     description: ""
   MANUAL_MAINTENANCE_RECORDS_INPUT:
     required: false
     type: string
-    description: 
-    default: Please Answer
+    description: All maintenance activities should be both approved and monitored whether or on or off site
+    default: Document approval process. Enter policy title.
   MANUAL_APPROVED_MONITORED_MAINTENANCE_INPUT:
     required: false
     type: string
-    description: 
-    default: Please Answer
+    description: Ensure that all system components are repaired and those repairs documented and reviewed in line with organization/vendor/manufacturer specifications
+    default: Document approval process.  Enter policy title.
   MANUAL_COMPONENT_REMOVAL_APPROVAL_INPUT:
     required: false
     type: string
-    description: 
-    default: Please Answer
+    description: Ensure that the removal of any system or component from premsis for maintenance requires the explicit approval of a specified person/department
+    default: Document approval process. Enter policy title.
   MANUAL_ENSURE_SECURITY_QUESTIONS_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_OBSCURE_AUTH_INFO_INPUT:
     required: false
     type: string
-    default: Please Answer
-    description: 
+    description: Obscuring authorization information during authorization process improves security
+    default: Document user access method to AWS
   MANUAL_DETAILED_BILLING_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_STRATEGIC_IAM_ROLES_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_CONTACT_DETAILS_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_SECURITY_CONTACT_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_RESOURCE_INSTANCE_ACCESS_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_APPROPRIATE_SNS_SUBSCRIBERS_INPUT:
     required: false
     type: string
-    default: Please Answer
-    description: 
+    description: Unintended SNS subscribers may pose a security risk
+    default: Verify and enter the SNS topics verified
   MANUAL_LEAST_ACCESS_ROUTING_TABLES_INPUT:
     required: false
     type: string
-    default: Please Answer
     description: 
   MANUAL_COMMUNICATION_SESSION_AUTHENTICITY_INPUT:
     required: false
     type: string
-    default: Please Answer
-    description:
+    description: Outline the controls implemented to protect session communications.
+    default: Document access to AWS environment
   MANUAL_ACCESS_THROUGH_VPN_INPUT:
     required: false
     type: string
-    default: Please Answer
     description:
   MANUAL_MOBILE_DEVICE_GUIDELINES_INPUT:
     required: false
     type: string
-    default: Please Answer
-    description:
+    description: Site officials should establish guidelines for the use of mobile devices and restrict the operation of those devices to the guidelines.
+    default: Specify mobile device policy
   MANUAL_MOBILE_DEVICE_CUI_ENCRYPTION_INPUT:
     required: false
     type: string
-    default: Please Answer
     description:
   MANUAL_INVENTORY_PERFORMED_INPUT:
     required: false
     type: string
-    default: Please Answer
     description:
