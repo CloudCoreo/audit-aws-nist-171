@@ -294,7 +294,6 @@ variables:
       - manual-access-through-vpn
       - manual-mobile-device-guidelines
       - manual-mobile-device-cui-encryption
-      - manual-inventory-performed
       - manual-remote-access-points-secured
       - manual-full-inventory-performed #meta_nist_171_id "3.1.20"
       - manual-encryption-audit-performed
@@ -367,10 +366,6 @@ variables:
     description: Site officials should establish guidelines for the use of mobile devices and restrict the operation of those devices to the guidelines.
     default: Specify mobile device policy
   MANUAL_MOBILE_DEVICE_CUI_ENCRYPTION_INPUT:
-    required: false
-    type: string
-    description:
-  MANUAL_INVENTORY_PERFORMED_INPUT:
     required: false
     type: string
     description:
